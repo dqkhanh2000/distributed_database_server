@@ -1,0 +1,33 @@
+{
+  "name": "quan_ly_ve_may_bay_phan_tan_server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dqkhanh2000/distributed_database_server.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dqkhanh2000/distributed_database_server/issues"
+  },
+  "homepage": "https://github.com/dqkhanh2000/distributed_database_server#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "msnodesqlv8": "^2.4.7",
+    "mssql": "^8.1.0",
+    "ngrok": "^4.3.1",
+    "sha256": "^0.2.0",
+    "tedious": "^14.4.0"
+  }
+}
