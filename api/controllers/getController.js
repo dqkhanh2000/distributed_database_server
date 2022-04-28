@@ -18,7 +18,9 @@ module.exports = {
     else {
       let serverName = `sqlServer${server}`.replaceAll("\"", "");
       let sql = `SELECT * FROM ${name}`;
-      // console.log(serverName)
+      if(name === "NhanVien") {
+        sql = `SELECT * FROM NhanVien INNER JOIN TaiKhoan ON NhanVien.MaNhanVien = TaiKhoan.MaNhanVien`
+      }
       try {
         let result = await req.app.locals.db[serverName].query(sql);
         data = result.recordset;
